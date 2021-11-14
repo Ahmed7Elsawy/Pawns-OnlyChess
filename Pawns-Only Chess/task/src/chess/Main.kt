@@ -257,42 +257,7 @@ private fun printBarrierLine() {
 
 private fun printBoxLine(lineNumber: Int, points: List<Point>) {
     val barrierLine = mutableListOf(
-        '8',
-        ' ',
-        '|',
-        ' ',
-        ' ',
-        ' ',
-        '|',
-        ' ',
-        ' ',
-        ' ',
-        '|',
-        ' ',
-        ' ',
-        ' ',
-        '|',
-        ' ',
-        ' ',
-        ' ',
-        '|',
-        ' ',
-        ' ',
-        ' ',
-        '|',
-        ' ',
-        ' ',
-        ' ',
-        '|',
-        ' ',
-        ' ',
-        ' ',
-        '|',
-        ' ',
-        ' ',
-        ' ',
-        '|'
-    )
+        '8', ' ', '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|')
     barrierLine[0] = '0' + lineNumber
     for (point in points)
         barrierLine[getLetterPositionInArray(point.letter)] = point.color.letter
